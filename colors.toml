@@ -1,0 +1,41 @@
+# Shigure / 時雨 — Rain · Snow · Mountain · Water
+# Omarchy v4.0.0 semantic palette. Flat keys; sRGB hex values.
+# Indigo surfaces, warm paper text, vermilion reserved for interaction.
+mode = "dark"
+
+accent = "#D58B72"
+selection = "#314D60"
+muted = "#8999A5"
+
+# Neutral ramp: deepest ink -> raised indigo surface.
+background = "#101F2B"
+dark_background = "#0B1721"
+darker_background = "#080F17"
+lighter_background = "#1B3040"
+
+# Warm paper, with cool secondary text and a snow-white cursor.
+foreground = "#E3DDCF"
+dark_foreground = "#A2ADB2"
+light_foreground = "#EBE5D9"
+bright_foreground = "#F3EFE6"
+
+# Named colors also resolve to ANSI color1..color6.
+# Lightened relative to the original palette for readable code on indigo.
+red = "#CE887D"
+yellow = "#D3B57D"
+orange = "#D5A078"
+green = "#9CAC89"
+cyan = "#8FB8B5"
+blue = "#84A7BD"
+magenta = "#B29AB8"
+brown = "#B39785"
+
+bright_red = "#E5A194"
+bright_yellow = "#E6CC9D"
+bright_green = "#B7C6A4"
+bright_cyan = "#ADD0CB"
+bright_blue = "#A3C3D5"
+bright_magenta = "#CCB5D0"
+
+# Supported by v4.0.0 gradient helpers: cool focus borders, warm UI accent.
+hyprland_active_border = "rgba(84A7BDee) rgba(8FB8B5ee) 45deg"
