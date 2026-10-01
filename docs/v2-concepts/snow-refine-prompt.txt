@@ -1,0 +1,7 @@
+Use case: precise-object-edit
+Asset type: dark ukiyo-e desktop wallpaper, Shigure II moon-gold series, wide 16:9.
+Input image 1: edit target, the current snow wallpaper.
+Primary request: remove the single straw-cape traveler at the lower right of the snowy road, including the hat, body, legs, walking stick, cast shadow and any small footprints immediately associated with the traveler. Reconstruct continuous clean snow and the existing subtle curved road lines beneath that area so there is no silhouette or ghost left behind. The winter scene must be completely uninhabited.
+Preserve invariants: keep the original framing and proportions; the snow-covered pine entering from upper left; the large quiet indigo night sky, sparse falling snow, distant wooded valley, traditional houses at lower right with tiny old-gold window accents, stone walls and the sweeping S-shaped snow road. Preserve their shapes, positions, color balance, sumi keyblock contours, flat printed color planes and restrained paper grain. This is a targeted figure removal, not a new composition.
+Style/medium: Hiroshige-inspired Edo ukiyo-e woodblock print, fine crisp ink outlines, restrained bokashi in sky, ink blue, Prussian blue, warm ivory snow and tiny muted old gold. No modern realism.
+Constraints: no humans anywhere, no animals, boats, lettering, signatures, seals, logos, new objects, bright glows or extra lights. Keep the wide image, no frame.

@@ -1,0 +1,389 @@
+{
+  "candidate_diff": {
+    "accent": {
+      "old": "#D58B72",
+      "candidate": "#CBB98B"
+    },
+    "bright_foreground": {
+      "old": "#F3EFE6",
+      "candidate": "#F0E7D5"
+    },
+    "hyprland_active_border": {
+      "old": "rgba(84A7BDee) rgba(8FB8B5ee) 45deg",
+      "candidate": "rgba(CBB98Bee) rgba(84A7BDee) 45deg"
+    }
+  },
+  "text_pairs": [
+    {
+      "foreground": "red",
+      "background": "background",
+      "contrast": 5.9399
+    },
+    {
+      "foreground": "red",
+      "background": "lighter_background",
+      "contrast": 4.8219
+    },
+    {
+      "foreground": "yellow",
+      "background": "background",
+      "contrast": 8.5205
+    },
+    {
+      "foreground": "yellow",
+      "background": "lighter_background",
+      "contrast": 6.9168
+    },
+    {
+      "foreground": "orange",
+      "background": "background",
+      "contrast": 7.286
+    },
+    {
+      "foreground": "orange",
+      "background": "lighter_background",
+      "contrast": 5.9146
+    },
+    {
+      "foreground": "green",
+      "background": "background",
+      "contrast": 6.9245
+    },
+    {
+      "foreground": "green",
+      "background": "lighter_background",
+      "contrast": 5.6212
+    },
+    {
+      "foreground": "cyan",
+      "background": "background",
+      "contrast": 7.7351
+    },
+    {
+      "foreground": "cyan",
+      "background": "lighter_background",
+      "contrast": 6.2792
+    },
+    {
+      "foreground": "blue",
+      "background": "background",
+      "contrast": 6.5794
+    },
+    {
+      "foreground": "blue",
+      "background": "lighter_background",
+      "contrast": 5.341
+    },
+    {
+      "foreground": "magenta",
+      "background": "background",
+      "contrast": 6.5506
+    },
+    {
+      "foreground": "magenta",
+      "background": "lighter_background",
+      "contrast": 5.3177
+    },
+    {
+      "foreground": "brown",
+      "background": "background",
+      "contrast": 6.1314
+    },
+    {
+      "foreground": "brown",
+      "background": "lighter_background",
+      "contrast": 4.9773
+    },
+    {
+      "foreground": "bright_red",
+      "background": "background",
+      "contrast": 7.8674
+    },
+    {
+      "foreground": "bright_red",
+      "background": "lighter_background",
+      "contrast": 6.3866
+    },
+    {
+      "foreground": "bright_yellow",
+      "background": "background",
+      "contrast": 10.7658
+    },
+    {
+      "foreground": "bright_yellow",
+      "background": "lighter_background",
+      "contrast": 8.7394
+    },
+    {
+      "foreground": "bright_green",
+      "background": "background",
+      "contrast": 9.2801
+    },
+    {
+      "foreground": "bright_green",
+      "background": "lighter_background",
+      "contrast": 7.5334
+    },
+    {
+      "foreground": "bright_cyan",
+      "background": "background",
+      "contrast": 10.1057
+    },
+    {
+      "foreground": "bright_cyan",
+      "background": "lighter_background",
+      "contrast": 8.2036
+    },
+    {
+      "foreground": "bright_blue",
+      "background": "background",
+      "contrast": 9.0383
+    },
+    {
+      "foreground": "bright_blue",
+      "background": "lighter_background",
+      "contrast": 7.3371
+    },
+    {
+      "foreground": "bright_magenta",
+      "background": "background",
+      "contrast": 8.8497
+    },
+    {
+      "foreground": "bright_magenta",
+      "background": "lighter_background",
+      "contrast": 7.184
+    },
+    {
+      "foreground": "foreground",
+      "background": "background",
+      "contrast": 12.379
+    },
+    {
+      "foreground": "foreground",
+      "background": "lighter_background",
+      "contrast": 10.049
+    },
+    {
+      "foreground": "dark_foreground",
+      "background": "background",
+      "contrast": 7.3082
+    },
+    {
+      "foreground": "dark_foreground",
+      "background": "lighter_background",
+      "contrast": 5.9327
+    },
+    {
+      "foreground": "muted",
+      "background": "background",
+      "contrast": 5.7175
+    },
+    {
+      "foreground": "muted",
+      "background": "lighter_background",
+      "contrast": 4.6413
+    },
+    {
+      "foreground": "accent",
+      "background": "background",
+      "contrast": 8.6612
+    },
+    {
+      "foreground": "accent",
+      "background": "lighter_background",
+      "contrast": 7.031
+    },
+    {
+      "foreground": "light_foreground",
+      "background": "background",
+      "contrast": 13.3626
+    },
+    {
+      "foreground": "light_foreground",
+      "background": "lighter_background",
+      "contrast": 10.8474
+    },
+    {
+      "foreground": "bright_foreground",
+      "background": "background",
+      "contrast": 13.6452
+    },
+    {
+      "foreground": "bright_foreground",
+      "background": "lighter_background",
+      "contrast": 11.0769
+    }
+  ],
+  "minimum_text_contrast": 4.6413,
+  "selection_contrast": 7.2409,
+  "images": [
+    {
+      "file": "01-moon.png",
+      "selected": true,
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "format": "PNG",
+      "icc_profile_present": false,
+      "bytes": 2255781,
+      "sha256": "ad269dda7a6da328b7b787d6f4fe499692d123b03bbd886699cb796234a11961"
+    },
+    {
+      "file": "02-rain-refined.png",
+      "selected": true,
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "format": "PNG",
+      "icc_profile_present": false,
+      "bytes": 2119326,
+      "sha256": "1fc8ba8bd1904cd57a6d4febde06891e3d204d8054f595bbd7eebd6da199a431"
+    },
+    {
+      "file": "02-rain.png",
+      "selected": false,
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "format": "PNG",
+      "icc_profile_present": false,
+      "bytes": 2419431,
+      "sha256": "5a6fae27ad3d757efe589813d36162cf19722e529cd5f39588c85e30a3c448db"
+    },
+    {
+      "file": "03-snow-refined.png",
+      "selected": true,
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "format": "PNG",
+      "icc_profile_present": false,
+      "bytes": 2222594,
+      "sha256": "98b7ebf260f7d8f0889c66ebaa308d5e48cbadf568cb209065ce88a3e3a5b8b7"
+    },
+    {
+      "file": "03-snow.png",
+      "selected": false,
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "format": "PNG",
+      "icc_profile_present": false,
+      "bytes": 2444925,
+      "sha256": "bf2449def8b943ab1064f948ac91d6d4b28bf13ecb8c94694c2c8fcce857b7f7"
+    },
+    {
+      "file": "04-tide-refined.png",
+      "selected": true,
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "format": "PNG",
+      "icc_profile_present": false,
+      "bytes": 2663679,
+      "sha256": "be870ab99684ae9abebdf72704fe19219d4e7f20e79cabb0f5db19da79b779ae"
+    },
+    {
+      "file": "04-tide.png",
+      "selected": false,
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "format": "PNG",
+      "icc_profile_present": false,
+      "bytes": 2186282,
+      "sha256": "86437ec99ef8b45b3f264c33ca700a5f2f28f67a4a7b1e354d9e5e25c67f7098"
+    }
+  ],
+  "browser_runtime_verified": false,
+  "omarchy_runtime_verified": false,
+  "preview": {
+    "fragment_bytes": 742587,
+    "variants": [
+      "月",
+      "雨",
+      "雪",
+      "潮"
+    ],
+    "embedded_images": 4,
+    "checks": [
+      "fragment contract",
+      "unique ids",
+      "actual JPEG bytes",
+      "candidate red and cursor tokens",
+      "JS syntax",
+      "show/hide",
+      "shared accent and samples",
+      "state restore",
+      "legacy state migration",
+      "no Tweak fallback",
+      "moon/rain JPEG bytes preserved",
+      "refined snow/tide JPEG embeds",
+      "1024x576 display JPEGs",
+      "unchanged shared controls and window layout",
+      "updated accessible scene descriptions"
+    ],
+    "browser_runtime_verified": false,
+    "jpeg_sha256": {
+      "moon": "9a358e75e9768ed7d3e453d0ea6029431e57272bc0ad17fc5b7ffd949a4dfb03",
+      "rain": "166bd0da6b14cc39568e61de07f418b77f6e8bbe9add3265505c805ff9dad4c3",
+      "snow": "efe576e44032f8ed5b677e5cebf4538c3c1b17ab16e8b53d3caec0ecc983aec2",
+      "tide": "41852fca54d2a95649487085d89760c4db060588cc9fc5f8a219b59f21f30173"
+    },
+    "jpeg_bytes": {
+      "moon": 101896,
+      "rain": 113022,
+      "snow": 137825,
+      "tide": 186124
+    },
+    "jpeg_dimensions": {
+      "moon": [
+        1024,
+        576
+      ],
+      "rain": [
+        1024,
+        576
+      ],
+      "snow": [
+        1024,
+        576
+      ],
+      "tide": [
+        1024,
+        576
+      ]
+    },
+    "updated_sources": {
+      "snow": "/Users/yonglun/Repo/omarchy-shigure-theme/docs/v2-concepts/03-snow-refined.png",
+      "tide": "/Users/yonglun/Repo/omarchy-shigure-theme/docs/v2-concepts/04-tide-refined.png"
+    },
+    "jpeg_conversion": {
+      "tool": "sips",
+      "width": 1024,
+      "quality": 75
+    },
+    "static_verified": true,
+    "node_vm_verified": true,
+    "artwork_revision": "snow-empty-landscape-tide-overhead-rocks"
+  },
+  "artwork_revision": {
+    "date": "2026-10-01",
+    "selected_snow": "03-snow-refined.png",
+    "selected_tide": "04-tide-refined.png",
+    "moon_unchanged": true,
+    "rain_unchanged": true,
+    "palette_unchanged": true,
+    "visual_review": {
+      "moon_tide_distinct": true,
+      "rain_snow_distinct": true,
+      "snow_no_figure_or_stick_ghost": true,
+      "tide_no_sky_horizon_islands_or_pine": true,
+      "series_style_consistent": true,
+      "central_low_detail_space": true,
+      "independent_review_completed": true
+    },
+    "original_snow_and_tide_retained": true
+  }
+}

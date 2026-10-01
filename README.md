@@ -1,126 +1,136 @@
-# Shigure / 時雨
+# Shigure II · 月下
 
-**Four quiet landscapes. One indigo desktop.**
+**Moon, rain, snow and tide. A quiet indigo desktop under moonlight.**
 
 English · [日本語](README.ja.md) · [简体中文](README.zh-CN.md)
 
-![Shigure — a timber bridge in slanting rain](preview.png)
+![Shigure II — moon above a distant bay](preview.png)
 
-A dark theme for **Omarchy 4.0**, pairing warm paper text with ink-blue surfaces,
-mist-blue focus borders and a small touch of vermilion. Four distinct wallpapers
-bring **rain, snow, mountain and water** to the same calm workspace.
+A dark theme for **Omarchy 4.0**, pairing ink-blue surfaces and warm paper text
+with old-gold interaction accents, a moon-white cursor and an old-gold-to-mist-blue
+focus border. Four distinct wallpapers bring **moon, rain, snow and tide** to one
+calm workspace. Moon is the default wallpaper.
 
 ## A landscape to work in
 
-Shigure draws its inspiration from **Utagawa Hiroshige's ukiyo-e**. Fine ink
-contours, flat printed colors, bokashi gradations and paper-white snow preserve
-the character of Japanese woodblock prints. Wide asymmetric compositions and
-generous negative space bring that language to a modern desktop.
+Shigure II draws its inspiration from **Utagawa Hiroshige's ukiyo-e**: fine ink
+contours, flat printed colors, bokashi gradations and the relationship between
+ink and unprinted paper. Asymmetric widescreen compositions and generous negative
+space bring that language to a modern desktop.
 
-The inspiration is compositional: diagonal rain, cropped foregrounds, distant
-layers and the relationship between ink and unprinted paper. Hiroshige's
-[Sudden Shower over Shin-Ōhashi Bridge and Atake](https://www.metmuseum.org/art/collection/search/55433)
-offers historical context. The wallpapers here are newly generated contemporary
-interpretations, not scans, reproductions or works by Hiroshige.
-
-Vermilion acts like a small punctuation mark. Indigo gives the desktop its
-structure; warm text keeps it welcoming through long working sessions.
+Hiroshige's [Eight Views of Kanazawa at Night](https://www.clevelandart.org/art/1924.967)
+provides historical context for the moonlight, low shore and horizontal layers.
+The collection develops four separate compositions: a distant moonlit bay,
+two umbrellas in rain, an unoccupied snowy lane and the tide seen from above.
+Old gold marks interaction; indigo gives the desktop structure.
 
 ## Install
 
-On **Omarchy 4.0.x**, after this repository has been published:
+This is a **local Shigure II candidate**. From inside the downloaded theme folder,
+install it in a new `shigure-ii` directory on **Omarchy 4.0.x**. It can coexist with
+a first-edition `shigure` installation. If `shigure-ii` already exists, back it up
+before copying; matching files will be replaced.
+
+```bash
+mkdir -p ~/.config/omarchy/themes/shigure-ii/backgrounds
+cp colors.toml icons.theme preview.png ~/.config/omarchy/themes/shigure-ii/
+cp backgrounds/*.png ~/.config/omarchy/themes/shigure-ii/backgrounds/
+omarchy theme set shigure-ii
+```
+
+To switch wallpapers when desired (Moon → Rain → Snow → Tide):
+
+```bash
+omarchy theme bg next
+```
+
+On fresh activation, **Moon** is first in filename order. Subsequent wallpaper
+selection follows your Omarchy version. The image above is a **1600 × 900 wallpaper
+display copy**, not a live desktop screenshot.
+
+**After this candidate has been published to the repository**, URL installation
+will be available:
 
 ```bash
 omarchy theme install https://github.com/yonglun/omarchy-shigure-theme
 ```
 
-The installer derives the name `shigure` and applies the theme. To select it again
-or move to the next wallpaper:
-
-```bash
-omarchy theme set shigure
-omarchy theme bg next
-```
-
-**Using a downloaded folder before publication:** from inside that folder, copy
-the theme into Omarchy's user-theme directory. If `shigure` already exists, back
-it up first; these commands replace files with matching names.
-
-```bash
-mkdir -p ~/.config/omarchy/themes/shigure/backgrounds
-cp colors.toml icons.theme preview.png ~/.config/omarchy/themes/shigure/
-cp backgrounds/*.png ~/.config/omarchy/themes/shigure/backgrounds/
-omarchy theme set shigure
-```
-
-On a fresh activation, **Rain** is first in filename order. Subsequent selection
-behavior follows your Omarchy version. The preview above shows the wallpaper,
-not a live desktop screenshot.
+The URL installer derives the name `shigure` and applies the theme. That path uses
+the first edition's directory name; back up an existing `shigure` before using it.
+The candidate has not been published or installed in a live Omarchy session here.
 
 ## Four studies
 
-| Rain · 雨 | Snow · 雪 |
+| Moon · 月 | Rain · 雨 |
 |:---:|:---:|
-| [![Rain](docs/images/01-rain.jpg)](backgrounds/01-rain.png) | [![Snow](docs/images/02-snow.jpg)](backgrounds/02-snow.png) |
-| A diagonal timber bridge, two umbrella-bearing travelers and finely cut rain lines. | Snow-covered inns, a plum branch and travelers on a curving white path. |
+| [![Moon](docs/images/01-moon.jpg)](backgrounds/01-moon.png) | [![Rain](docs/images/02-rain.jpg)](backgrounds/02-rain.png) |
+| A moon above a distant bay, low shores and reeds; open sky and water at the center. | Cropped eaves, slanting rain and two umbrella-bearing travelers; warmth in umbrellas and road. |
 
-| Mountain · 山 | Water · 水 |
+| Snow · 雪 | Tide · 潮 |
 |:---:|:---:|
-| [![Mountain](docs/images/03-mountain.jpg)](backgrounds/03-mountain.png) | [![Water](docs/images/04-water.jpg)](backgrounds/04-water.png) |
-| Mount Fuji beyond blue foothills, framed by a boldly cropped pine. | Irises and two carp among flowing lines and broad blue water. |
+| [![Snow](docs/images/03-snow.jpg)](backgrounds/03-snow.png) | [![Tide](docs/images/04-tide.jpg)](backgrounds/04-tide.png) |
+| An unoccupied snow scene with pine, houses and an S-shaped snowy lane. | A close overhead view of rocks and curving tidal water, with no sky or horizon. |
 
-Click an image for the full wallpaper. All four are text-free **4096 × 2304 PNGs,
-16:9, sRGB**. Each has its own subject and composition; none contains a boat.
-They share one palette, so switching landscapes does not require a new theme.
-
-The generated sources were **1672 × 941**, resampled for delivery. The files have
-4K-class dimensions; they do not contain native 4K generated detail.
+Click an image for the original wallpaper. All four are text-free **1672 × 941
+PNG / RGB** files, with **no embedded ICC profile**. They preserve the actual
+generated dimensions, approximately 16:9, without enlargement or additional color
+grading; they are not native 4K images. The gallery uses **1024 × 576 JPEG** display
+copies. All four share one theme palette.
 
 ## The palette
 
-![Shigure palette](docs/images/palette.svg)
+![Shigure II palette](docs/images/palette.svg)
 
 | Role | Color | Purpose |
 |---|---|---|
 | Ink | `#101F2B` | Main background |
 | Raised indigo | `#1B3040` | Secondary surfaces |
 | Warm paper | `#E3DDCF` | Main text |
-| Snow | `#F3EFE6` | Cursor and brightest text |
-| Mist blue | `#84A7BD` | Blue syntax and focus border |
-| Water green | `#8FB8B5` | Cyan syntax and gradient endpoint |
+| Moon white | `#F0E7D5` | Cursor and brightest text |
+| Old gold | `#CBB98B` | Selected controls, UI accent and focus-gradient start |
+| Mist blue | `#84A7BD` | Blue syntax and focus-gradient end |
+| Water green | `#8FB8B5` | Cyan syntax |
 | Pine | `#9CAC89` | Green syntax |
-| Vermilion | `#D58B72` | Selected controls and UI accent |
+| Vermilion | `#CE887D` | Red semantic color |
 | Ochre | `#D3B57D` | Yellow syntax |
 
-These are custom Shigure colors, not claims of standardized historical pigments.
-Main text has **12.38:1** contrast against the background; all eight base named
-colors exceed **5.9:1** on that background. Selected text is **7.75:1**.
-These measurements cover opaque palette pairs, not every application's rendering.
+The focus border is `rgba(CBB98Bee) rgba(84A7BDee) 45deg`. Relative to the first
+edition, only `accent`, `bright_foreground` and `hyprland_active_border` change;
+other semantic colors remain intact. These are custom colors, not standardized
+historical pigments.
+
+Main text has **12.38:1** contrast against the main background; selected text is
+**7.24:1**. Old gold measures **8.66:1** against the main background and **7.03:1**
+against the raised surface. These are measurements of specified opaque color
+pairs, not every application's final rendering.
 
 ## Omarchy compatibility
 
-[`colors.toml`](colors.toml) supplies the complete semantic palette, explicit
-`mode = "dark"`, bright colors and a supported cool border gradient. Omarchy
-generates the terminal, editor, Hyprland and shell configuration from its own
-templates. `icons.theme` selects the documented `Yaru-prussiangreen` variant.
-There are no executable theme hooks or application config overrides to maintain.
+[`colors.toml`](colors.toml) supplies the semantic palette, explicit `mode = "dark"`,
+bright colors and a supported focus gradient. Omarchy generates the terminal,
+editor, Hyprland and shell configuration from its own templates.
+[`icons.theme`](icons.theme) selects `Yaru-prussiangreen`. The theme contains no
+executable hooks or application configuration overrides.
 
-Compatibility is checked against the **v4.0.0** color resolver and templates.
-See [verification details and limitations](docs/COMPATIBILITY.md). A live Omarchy
-desktop installation has not been tested in this macOS workspace.
+Verification targets official **v4.0.0**. See [coverage and limitations](docs/COMPATIBILITY.md)
+and the [validation record](docs/VALIDATION.json). A live Omarchy desktop
+installation has not been tested in this macOS workspace.
 
 ## Artwork & reuse
 
-The collection is inspired by Utagawa Hiroshige's ukiyo-e.
-The [artwork record](docs/ARTWORK.md) documents image production and processing.
-Omarchy is an independent upstream project; Shigure is a community theme.
+The collection is inspired by Utagawa Hiroshige's ukiyo-e. The images are newly
+generated contemporary interpretations, not historical prints or scans.
+Technical production used OpenAI's built-in ImageGen on 2026-10-01; the
+[artwork record](docs/ARTWORK.md) links the complete prompts, revision comparisons
+and actual source metadata.
 
+Shigure II is a community theme, independent of Omarchy. The first edition is
+preserved in Git commit `ceb04250c1e9816c83f909e599e924f12b57467c`.
 Configuration, documentation and supplied artwork are distributed under the
-[MIT License](LICENSE). If you share a screenshot or a variation, a link back to
-Shigure helps others find it.
+[MIT License](LICENSE). A link back to Shigure is welcome when sharing a variation.
 
-Suggested repository description: *A quiet indigo theme for Omarchy — rain,
-snow, mountains and water, inspired by Utagawa Hiroshige's ukiyo-e.*
+Suggested repository description: *A moonlit indigo theme for Omarchy — moon,
+rain, snow and tide, inspired by Utagawa Hiroshige's ukiyo-e.*
 
 Suggested topics: `omarchy-theme`, `omarchy`, `hiroshige`, `ukiyo-e`, `dark-theme`,
 `wallpaper`, `indigo`.
