@@ -54,14 +54,14 @@ def validate_assets():
             assert contrast(colors[key], colors[surface]) >= 4.5, (key, surface)
     assert contrast(colors['bright_foreground'], colors['selection']) >= 7
     print(f"PASS palette: {len(colors)} keys; body {contrast(colors['foreground'], colors['background']):.2f}:1; selected text {contrast(colors['bright_foreground'], colors['selection']):.2f}:1")
-    names = ['01-rain.png', '02-snow.png', '03-mountain.png', '04-water.png']
+    names = ['01-moon.png', '02-rain.png', '03-snow.png', '04-tide.png']
     assert sorted(p.name for p in (ROOT / 'backgrounds').iterdir()) == names
     for name in names:
         path = ROOT / 'backgrounds' / name
-        assert png_size(path) == (4096, 2304), path
+        assert png_size(path) == (1672, 941), path
         assert path.stat().st_size < 50_000_000, path
     assert png_size(ROOT / 'preview.png') == (1600, 900)
-    print('PASS assets: four 4096 x 2304 wallpapers and 1600 x 900 preview')
+    print('PASS assets: four original 1672 x 941 wallpapers and 1600 x 900 Moon preview')
     for path in list(ROOT.glob('README*.md')) + list((ROOT / 'docs').glob('*.md')):
         for link in re.findall(r'\]\(([^)]+)\)', path.read_text()):
             if not re.match(r'https?://|#', link):
@@ -114,7 +114,9 @@ def validate_upstream(source, bash, colors):
         shell = tomllib.loads((stage / 'shell.toml').read_text())
         assert shell['hyprland']['active-border'] == colors['hyprland_active_border']
         border = (stage / 'hyprland.lua').read_text()
-        assert '"rgba(84A7BDee)", "rgba(8FB8B5ee)"' in border and 'angle = 45' in border
+        gradient_colors = re.findall(r'rgba\([0-9a-fA-F]{8}\)', colors['hyprland_active_border'])
+        assert len(gradient_colors) == 2
+        assert all(f'"{color}"' in border for color in gradient_colors) and 'angle = 45' in border
         print('PASS upstream: ANSI aliases, cursor, selection, 17 templates, TOML/JSON parsing and gradient output')
 
 

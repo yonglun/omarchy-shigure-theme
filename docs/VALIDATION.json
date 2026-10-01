@@ -1,0 +1,445 @@
+{
+  "date": "2026-10-01",
+  "status": "local-theme-candidate",
+  "version": "Shigure II · 月下",
+  "default_wallpaper": "01-moon.png",
+  "upstream_target": "v4.0.0",
+  "palette_changes_from_v1": {
+    "accent": {
+      "v1": "#D58B72",
+      "v2": "#CBB98B"
+    },
+    "bright_foreground": {
+      "v1": "#F3EFE6",
+      "v2": "#F0E7D5"
+    },
+    "hyprland_active_border": {
+      "v1": "rgba(84A7BDee) rgba(8FB8B5ee) 45deg",
+      "v2": "rgba(CBB98Bee) rgba(84A7BDee) 45deg"
+    }
+  },
+  "wallpapers": [
+    {
+      "file": "backgrounds/01-moon.png",
+      "source": "docs/v2-concepts/01-moon.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "icc_profile_present": false,
+      "bytes": 2255781,
+      "sha256": "ad269dda7a6da328b7b787d6f4fe499692d123b03bbd886699cb796234a11961",
+      "source_bytes_match": true
+    },
+    {
+      "file": "backgrounds/02-rain.png",
+      "source": "docs/v2-concepts/02-rain-refined.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "icc_profile_present": false,
+      "bytes": 2119326,
+      "sha256": "1fc8ba8bd1904cd57a6d4febde06891e3d204d8054f595bbd7eebd6da199a431",
+      "source_bytes_match": true
+    },
+    {
+      "file": "backgrounds/03-snow.png",
+      "source": "docs/v2-concepts/03-snow-refined.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "icc_profile_present": false,
+      "bytes": 2222594,
+      "sha256": "98b7ebf260f7d8f0889c66ebaa308d5e48cbadf568cb209065ce88a3e3a5b8b7",
+      "source_bytes_match": true
+    },
+    {
+      "file": "backgrounds/04-tide.png",
+      "source": "docs/v2-concepts/04-tide-refined.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "icc_profile_present": false,
+      "bytes": 2663679,
+      "sha256": "be870ab99684ae9abebdf72704fe19219d4e7f20e79cabb0f5db19da79b779ae",
+      "source_bytes_match": true
+    }
+  ],
+  "display_images": [
+    {
+      "file": "preview.png",
+      "width": 1600,
+      "height": 900,
+      "format": "PNG",
+      "sha256": "0b53762c0304801119fc1b64c7b6c990947561e6c0417adbf0e592ff880e4b0c"
+    },
+    {
+      "file": "docs/images/01-moon.jpg",
+      "width": 1024,
+      "height": 576,
+      "format": "JPEG",
+      "sha256": "9a358e75e9768ed7d3e453d0ea6029431e57272bc0ad17fc5b7ffd949a4dfb03"
+    },
+    {
+      "file": "docs/images/02-rain.jpg",
+      "width": 1024,
+      "height": 576,
+      "format": "JPEG",
+      "sha256": "166bd0da6b14cc39568e61de07f418b77f6e8bbe9add3265505c805ff9dad4c3"
+    },
+    {
+      "file": "docs/images/03-snow.jpg",
+      "width": 1024,
+      "height": 576,
+      "format": "JPEG",
+      "sha256": "efe576e44032f8ed5b677e5cebf4538c3c1b17ab16e8b53d3caec0ecc983aec2"
+    },
+    {
+      "file": "docs/images/04-tide.jpg",
+      "width": 1024,
+      "height": 576,
+      "format": "JPEG",
+      "sha256": "41852fca54d2a95649487085d89760c4db060588cc9fc5f8a219b59f21f30173"
+    }
+  ],
+  "full_image_decode_verified": true,
+  "upstream_render_verified": true,
+  "omarchy_desktop_runtime_verified": false,
+  "remote_published": false,
+  "text_pairs": [
+    {
+      "foreground": "red",
+      "background": "background",
+      "contrast": 5.9399
+    },
+    {
+      "foreground": "red",
+      "background": "lighter_background",
+      "contrast": 4.8219
+    },
+    {
+      "foreground": "yellow",
+      "background": "background",
+      "contrast": 8.5205
+    },
+    {
+      "foreground": "yellow",
+      "background": "lighter_background",
+      "contrast": 6.9168
+    },
+    {
+      "foreground": "orange",
+      "background": "background",
+      "contrast": 7.286
+    },
+    {
+      "foreground": "orange",
+      "background": "lighter_background",
+      "contrast": 5.9146
+    },
+    {
+      "foreground": "green",
+      "background": "background",
+      "contrast": 6.9245
+    },
+    {
+      "foreground": "green",
+      "background": "lighter_background",
+      "contrast": 5.6212
+    },
+    {
+      "foreground": "cyan",
+      "background": "background",
+      "contrast": 7.7351
+    },
+    {
+      "foreground": "cyan",
+      "background": "lighter_background",
+      "contrast": 6.2792
+    },
+    {
+      "foreground": "blue",
+      "background": "background",
+      "contrast": 6.5794
+    },
+    {
+      "foreground": "blue",
+      "background": "lighter_background",
+      "contrast": 5.341
+    },
+    {
+      "foreground": "magenta",
+      "background": "background",
+      "contrast": 6.5506
+    },
+    {
+      "foreground": "magenta",
+      "background": "lighter_background",
+      "contrast": 5.3177
+    },
+    {
+      "foreground": "brown",
+      "background": "background",
+      "contrast": 6.1314
+    },
+    {
+      "foreground": "brown",
+      "background": "lighter_background",
+      "contrast": 4.9773
+    },
+    {
+      "foreground": "bright_red",
+      "background": "background",
+      "contrast": 7.8674
+    },
+    {
+      "foreground": "bright_red",
+      "background": "lighter_background",
+      "contrast": 6.3866
+    },
+    {
+      "foreground": "bright_yellow",
+      "background": "background",
+      "contrast": 10.7658
+    },
+    {
+      "foreground": "bright_yellow",
+      "background": "lighter_background",
+      "contrast": 8.7394
+    },
+    {
+      "foreground": "bright_green",
+      "background": "background",
+      "contrast": 9.2801
+    },
+    {
+      "foreground": "bright_green",
+      "background": "lighter_background",
+      "contrast": 7.5334
+    },
+    {
+      "foreground": "bright_cyan",
+      "background": "background",
+      "contrast": 10.1057
+    },
+    {
+      "foreground": "bright_cyan",
+      "background": "lighter_background",
+      "contrast": 8.2036
+    },
+    {
+      "foreground": "bright_blue",
+      "background": "background",
+      "contrast": 9.0383
+    },
+    {
+      "foreground": "bright_blue",
+      "background": "lighter_background",
+      "contrast": 7.3371
+    },
+    {
+      "foreground": "bright_magenta",
+      "background": "background",
+      "contrast": 8.8497
+    },
+    {
+      "foreground": "bright_magenta",
+      "background": "lighter_background",
+      "contrast": 7.184
+    },
+    {
+      "foreground": "foreground",
+      "background": "background",
+      "contrast": 12.379
+    },
+    {
+      "foreground": "foreground",
+      "background": "lighter_background",
+      "contrast": 10.049
+    },
+    {
+      "foreground": "dark_foreground",
+      "background": "background",
+      "contrast": 7.3082
+    },
+    {
+      "foreground": "dark_foreground",
+      "background": "lighter_background",
+      "contrast": 5.9327
+    },
+    {
+      "foreground": "muted",
+      "background": "background",
+      "contrast": 5.7175
+    },
+    {
+      "foreground": "muted",
+      "background": "lighter_background",
+      "contrast": 4.6413
+    },
+    {
+      "foreground": "accent",
+      "background": "background",
+      "contrast": 8.6612
+    },
+    {
+      "foreground": "accent",
+      "background": "lighter_background",
+      "contrast": 7.031
+    },
+    {
+      "foreground": "light_foreground",
+      "background": "background",
+      "contrast": 13.3626
+    },
+    {
+      "foreground": "light_foreground",
+      "background": "lighter_background",
+      "contrast": 10.8474
+    },
+    {
+      "foreground": "bright_foreground",
+      "background": "background",
+      "contrast": 13.6452
+    },
+    {
+      "foreground": "bright_foreground",
+      "background": "lighter_background",
+      "contrast": 11.0769
+    }
+  ],
+  "minimum_text_contrast": 4.6413,
+  "selection_contrast": 7.2409,
+  "package": {
+    "file": "dist/shigure-ii-moon-gold.zip",
+    "bytes": 11292399,
+    "sha256": "cb20dd25cc5551e69dac6ab802f45e288511ae5749920151b2c64bd4ff0da95f",
+    "entries": [
+      "shigure-ii/INSTALL.txt",
+      "shigure-ii/LICENSE",
+      "shigure-ii/backgrounds/01-moon.png",
+      "shigure-ii/backgrounds/02-rain.png",
+      "shigure-ii/backgrounds/03-snow.png",
+      "shigure-ii/backgrounds/04-tide.png",
+      "shigure-ii/colors.toml",
+      "shigure-ii/icons.theme",
+      "shigure-ii/preview.png"
+    ],
+    "crc_verified": true,
+    "extracted_bytes_match": true,
+    "extracted_pngs_fully_decoded": true,
+    "extracted_palette_matches": true
+  },
+  "upstream": {
+    "target": "v4.0.0",
+    "pinned_files": [
+      {
+        "file": "default/themed/alacritty.toml.tpl",
+        "sha256": "02489f97737108e8a19d4c04d8251c8f3ee0bc896dbf0660b6ecaded91a61ade"
+      },
+      {
+        "file": "default/themed/btop.theme.tpl",
+        "sha256": "88b5057821b674caa8d89a27a6ac912681633b22619927486a76f6ad8a3183a0"
+      },
+      {
+        "file": "default/themed/chromium.theme.tpl",
+        "sha256": "69ce7344bb3e9b98b589e2a5afe9ed678a5829b95214e49ca89784629e06d672"
+      },
+      {
+        "file": "default/themed/claude.json.tpl",
+        "sha256": "ed4da8adb897511b349466fec31910de744e1ca5927ab11fdba3cfcbb4827e94"
+      },
+      {
+        "file": "default/themed/foot.ini.tpl",
+        "sha256": "0c719c4efc4e640bc4cb776fc704510f2c0087b45becba083b8eac5b8a43de74"
+      },
+      {
+        "file": "default/themed/ghostty.conf.tpl",
+        "sha256": "8f56c275227a6075f65dafc3040d2f2829b8fb413451c709a9f29f32a795e1b0"
+      },
+      {
+        "file": "default/themed/gum_env.lua.tpl",
+        "sha256": "c6b1ed256357cd0a9bb4ec9937306deb936116781967c828a67ef63069754dc8"
+      },
+      {
+        "file": "default/themed/helix.toml.tpl",
+        "sha256": "232ec1e0f753631d82f87c3b424c2e2092c2afefaf845c1566cd0ff97a1370d6"
+      },
+      {
+        "file": "default/themed/hyprland-preview-share-picker.css.tpl",
+        "sha256": "a478f96f9e6b2504aa44c61349e8fc7941a2943616fb53c61cba8e2986c6ee58"
+      },
+      {
+        "file": "default/themed/hyprland.lua.tpl",
+        "sha256": "dbe746fa74cfdc9a136806852fcb0bb66189426f8f5400b7e8324fbef3887deb"
+      },
+      {
+        "file": "default/themed/keyboard.rgb.tpl",
+        "sha256": "bdb8c6d3fe4df7498bd3e1888347383f490612ba05402d20e0546933fe58f4fd"
+      },
+      {
+        "file": "default/themed/kitty.conf.tpl",
+        "sha256": "0570fcafb47cb81b9265bf3faaef028acd0b9aa8b50fc24e3d1b48127fab82a2"
+      },
+      {
+        "file": "default/themed/neovim.lua.tpl",
+        "sha256": "5391f827d5acd079658a19e2225d8c2a8509bc487cbdaec8b18cd0c5547bfe70"
+      },
+      {
+        "file": "default/themed/obsidian.css.tpl",
+        "sha256": "bd5813990f3dbbacd27800a0d69a512cebd28b26c98cf07c6ad3ea08a20322c2"
+      },
+      {
+        "file": "default/themed/pi.json.tpl",
+        "sha256": "1f1aaf1334c29190a3f9bf6ec345e67795b80ba2826f435f09be8dd8d5484c86"
+      },
+      {
+        "file": "default/themed/shell.toml.tpl",
+        "sha256": "bdc8e76a5a9a700adaca0d2fa44a2a340584892fd507e3fcbd4f9a4843765242"
+      },
+      {
+        "file": "default/themed/vscode-theme.json.tpl",
+        "sha256": "08bac7f0ecc003bc7950dc3b85ec1828188d46a0cf7c6bfc6fae8035ec616124"
+      },
+      {
+        "file": "bin/omarchy-theme-color",
+        "sha256": "a429ed1b18114ff3e784fc4479c6b829e9effb64c0f9d22d3b15eda4c62d86b5"
+      },
+      {
+        "file": "bin/omarchy-theme-set-templates",
+        "sha256": "add9154d012c12b5628128d71efcf216ed62024cef2370e3c5c470378c06d45f"
+      },
+      {
+        "file": "bin/omarchy-theme-install",
+        "sha256": "fd735a9e01ce212cff44691c38d41d570100fee6857d293daae451296a8e3c4e"
+      }
+    ],
+    "pinned_sha256_verified": true,
+    "bash_version": "5.3.20",
+    "ansi_aliases_verified": 16,
+    "templates_rendered": 17,
+    "generated_toml_json_parse_verified": true,
+    "hyprland_gradient_verified": true,
+    "shell_gradient_verified": true,
+    "isolated_home": true,
+    "desktop_theme_applied": false
+  },
+  "checks": {
+    "palette_cli": true,
+    "active_asset_set_cli": true,
+    "relative_markdown_links_cli": true,
+    "full_image_decode": true,
+    "confirmed_source_bytes_match": true,
+    "svg_xml_parse": true,
+    "git_diff_check": true,
+    "package_roundtrip": true
+  },
+  "review": {
+    "spec_compliance": "passed",
+    "quality": "passed",
+    "important_findings_resolved": 1,
+    "unresolved_findings": 0,
+    "installation_applies_once": true,
+    "wallpaper_cycling_optional": true
+  },
+  "branch": "codex/shigure-v2-moon-gold"
+}

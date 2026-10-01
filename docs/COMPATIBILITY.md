@@ -1,9 +1,9 @@
-# Omarchy 4.0 compatibility
+# Shigure II — Omarchy 4.0 compatibility
 
-Verification date: 2026-09-18. Target: the official **v4.0.0** tag, not a moving
-branch or an inferred older theme format.
+Verification date: **2026-10-01**. Target: the official **v4.0.0** tag.
+This report covers the local moon-gold second-edition candidate.
 
-## Upstream references
+## Official interfaces
 
 - [Theme specification](https://github.com/omacom/omarchy/blob/v4.0.0/docs/theming.md)
 - [Theme authoring manual](https://github.com/omacom/omarchy/blob/v4.0.0/manual/43-making-your-own-theme.md)
@@ -12,116 +12,105 @@ branch or an inferred older theme format.
 - [Application templates](https://github.com/omacom/omarchy/tree/v4.0.0/default/themed)
 - [Git installer](https://github.com/omacom/omarchy/blob/v4.0.0/bin/omarchy-theme-install)
 - [Theme activation](https://github.com/omacom/omarchy/blob/v4.0.0/bin/omarchy-theme-set)
+- [Background cycling](https://github.com/omacom/omarchy/blob/v4.0.0/bin/omarchy-theme-bg-next)
 
-## Findings and changes
+The unchanged upstream resolver, renderer and 17 templates were obtained from
+the official tag. All **20** entries in [the pinned SHA-256 list](upstream-v4.0.0.sha256)
+matched before the final rendering check. Rendering uses a disposable HOME;
+no theme is selected on this macOS desktop.
 
-The original theme already used valid semantic names and a valid
-`hyprland_active_border` gradient. Omarchy 4.0 does not require a legacy
-`color0`–`color15` block alongside those names: its resolver supplies those aliases.
-This refresh keeps the flat canonical format, explicitly sets `mode = "dark"`,
-defines `brown` instead of accepting its derived fallback, and brightens readable
-colors while retaining the indigo / warm-paper / vermilion direction.
+## Theme format and behavior
 
-The palette contains 25 six-digit sRGB color values, plus mode and a supported
-Hyprland gradient. `selection_foreground` and the cursor resolve to
-`bright_foreground`; `selection_background` resolves to `selection`. `muted`
-resolves to ANSI color8. The neutral luminance ramp is strictly increasing from
-`darker_background` through `bright_foreground`.
+`colors.toml` uses 27 flat canonical fields: 25 six-digit color values, explicit
+`mode = "dark"` and the supported gradient. Only `accent`, `bright_foreground`
+and `hyprland_active_border` change from the first edition.
+The resolver supplies `color0`–`color15` aliases; cursor and selection foreground
+resolve to moon-white `bright_foreground`, and selection background to `selection`.
+`icons.theme` retains `Yaru-prussiangreen`.
 
-A theme does not need its own shell, terminal or editor configuration. Omarchy
-renders those files from its templates. This package therefore contains no
-application overrides, Lua payloads or executable theme hooks. The authoring
-validator in `scripts/` is not an installation hook and is never required to
-apply the theme.
+Omarchy renders application configuration from its own templates. This theme
+contains no application overrides or executable installation hooks; the Python
+authoring validator is not required to apply it.
 
-Later Omarchy releases changed how downloaded executable theme overrides are
-handled. This package does not depend on those files, and this report does not
-attribute that later behavior to the original v4.0.0 installer.
+Code inspection confirms that URL installation derives `shigure` from
+`omarchy-shigure-theme` and replaces an existing same-name theme directory
+before cloning. Local candidate instructions use a separate `shigure-ii`
+directory so the first edition can remain installed. On a fresh theme selection
+without additional user wallpapers, filename order starts with `01-moon.png`;
+subsequent behavior and user wallpaper overrides follow the upstream selector.
+The optional `bg next` command is separate from the installation block.
 
-## Checks performed
+## Checks performed for this candidate
 
 | Check | Result |
 |---|---|
-| TOML parsing and canonical fields | Pass; all color values are quoted six-digit hex strings |
-| Explicit dark mode | Pass |
-| Complete semantic and bright palette | Pass; 16 ANSI aliases resolve correctly |
-| Original upstream color resolver | Pass; no stderr or rejected values |
-| Original upstream template renderer | Pass; all 17 outputs produced without unresolved placeholders |
-| Generated TOML / JSON | Pass; parsed with Python standard-library parsers |
-| Hyprland gradient | Pass; Lua gradient table contains both RGBA colors and a 45-degree angle |
-| Shell gradient | Pass; generated `[hyprland].active-border` matches the palette |
-| Installer naming and cloning | Pass in a disposable local Git fixture; activation command receives `shigure` |
-| Wallpapers | Pass; four fully decoded RGB PNGs, 4096 × 2304, 16:9, sRGB chunks |
-| Preview | Pass; fully decoded 1600 × 900 PNG derived from Rain |
-| Documentation | Pass; three language editions and relative Markdown links checked |
+| TOML, canonical semantic fields and dark mode | Pass; 27 keys |
+| Neutral luminance ramp and readable text colors | Pass |
+| Original upstream resolver | Pass; 16 ANSI aliases, cursor and selection |
+| Original upstream renderer | Pass; all 17 outputs, no unresolved placeholders or stderr |
+| Generated TOML / JSON | Pass; standard-library parsers |
+| Hyprland gradient | Pass; old gold and mist blue, angle 45 |
+| Shell gradient | Pass; matches `hyprland_active_border` |
+| Active wallpaper set | Pass; exactly Moon, Rain, Snow and Tide |
+| Wallpaper full decoding and source hashes | Pass; unchanged 1672 × 941 RGB PNGs, no embedded ICC |
+| Preview and gallery full decoding | Pass; Moon 1600 × 900 PNG; four 1024 × 576 JPEGs |
+| Documentation | Pass; three language editions and relative links |
 
-The 17 generated files are `alacritty.toml`, `btop.theme`, `chromium.theme`,
-`claude.json`, `foot.ini`, `ghostty.conf`, `gum_env.lua`, `helix.toml`,
+The outputs are `alacritty.toml`, `btop.theme`, `chromium.theme`, `claude.json`,
+`foot.ini`, `ghostty.conf`, `gum_env.lua`, `helix.toml`,
 `hyprland-preview-share-picker.css`, `hyprland.lua`, `keyboard.rgb`, `kitty.conf`,
-`neovim.lua`, `obsidian.css`, `pi.json`, `shell.toml`, and `vscode-theme.json`.
+`neovim.lua`, `obsidian.css`, `pi.json`, `shell.toml` and `vscode-theme.json`.
 
-The installer smoke test used the unmodified installer, real `git clone` from a
-temporary local repository named `omarchy-shigure-theme`, and an activation stub
-that records the requested theme name. It verifies installer naming, cloning and
-dispatch, not an end-to-end Linux desktop installation or GitHub availability.
+Precise image metadata, palette differences and local package checks are in
+[VALIDATION.json](VALIDATION.json). Sources and processing are documented in
+[ARTWORK.md](ARTWORK.md). Wallpapers keep the original generation dimensions;
+no native 4K or embedded color-profile claim is made.
 
 ## Contrast
 
-Relative sRGB luminance, measured on opaque colors:
+Relative sRGB luminance for specified opaque color pairs:
 
 | Pair | Contrast |
 |---|---:|
 | Main text / background | 12.38:1 |
 | Main text / raised surface | 10.05:1 |
-| Selected text / selection | 7.75:1 |
-| Eight base named colors / background | At least 5.94:1 |
-| Eight base named colors / raised surface | At least 4.82:1 |
+| Moon-white selected text / selection | 7.24:1 |
+| Old gold / background | 8.66:1 |
+| Old gold / raised surface | 7.03:1 |
+| Minimum of the 40 checked text / surface pairs | 4.64:1 |
 
-The validator also checks that muted text, secondary text, the accent and all
-bright syntax colors achieve at least 4.5:1 on both main and raised backgrounds.
-These are palette checks, not a blanket accessibility certification: application
-mixing, opacity, wallpaper, font rendering and custom templates can affect results.
+These measurements do not certify every application's final rendering.
 
 ## Reproduce
 
-For file, palette and documentation checks, use Python 3.11 or newer:
+Use Python 3.11+ for file, palette and documentation checks:
 
 ```bash
 python3 scripts/validate-theme.py
 ```
 
-To additionally execute the upstream resolver and all templates, obtain an
-official Omarchy source checkout at **v4.0.0**, then pass its directory:
-
-```bash
-python3 scripts/validate-theme.py --upstream /path/to/omarchy
-```
-
-Bash 4+ is required by upstream's associative arrays; Bash 5 is recommended.
-On macOS with Homebrew Bash installed:
+To run the resolver and templates, use an official v4.0.0 checkout and Bash 4+.
+The final check used Bash 5.3.20 on macOS:
 
 ```bash
 python3 scripts/validate-theme.py \
-  --upstream /path/to/omarchy \
+  --upstream /path/to/omarchy-v4.0.0 \
   --bash /opt/homebrew/bin/bash
 ```
 
-The upstream source is executed as local code: use the official release.
-The validator uses a disposable home directory for those subprocesses and removes
-its generated files afterwards. It never selects a theme on the current desktop.
-The initial verification used Bash 5.3.20 on macOS. The original resolver and
-renderer were invoked unchanged; a PATH wrapper selected the supported Bash for
-the helper because macOS `/bin/bash` is version 3.2.
+The CLI has no network behavior and uses a temporary home for rendering. Its
+PNG checks inspect headers; the full image decoding and source-hash checks
+recorded in VALIDATION.json were additionally performed with bundled Pillow.
 
-## Remaining runtime verification
+## Remaining desktop verification
 
-A real Omarchy/Hyprland session was unavailable in this macOS workspace.
-Consequently, shell rendering, actual Yaru icon availability, application reload
-hooks, monitor cropping and visual appearance in running editors are **not**
-claimed as tested. Generated Lua was inspected but not executed inside Hyprland
-or Neovim. A future upstream version or user template can alter the result.
+A live Omarchy/Hyprland session was unavailable. Actual Yaru icon availability,
+application reloads, Lua execution in Hyprland or Neovim, monitor cropping and
+visual appearance in running applications remain untested. This is a local
+candidate; it has not been published or installed on a live Omarchy desktop.
 
-For final desktop acceptance on Omarchy 4.0.x: install the local theme as described
-in the README, apply `shigure`, cycle through all four backgrounds, and inspect a
-terminal, Neovim, the theme selector, notifications and the lock screen. Check
-focused borders, selected text, diagnostic colors and dimmed comments.
+For desktop acceptance, apply the local `shigure-ii` candidate on Omarchy 4.0.x,
+cycle through Moon, Rain, Snow and Tide, and inspect a terminal, Neovim, the theme
+selector, notifications and lock screen. Check focus borders, selected text,
+diagnostic colors and dimmed comments. Later releases and user templates can
+change the behavior.

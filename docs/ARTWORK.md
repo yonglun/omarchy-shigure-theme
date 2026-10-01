@@ -1,37 +1,73 @@
-# Artwork provenance
+# Shigure II · 月下 — artwork provenance
 
-Visual inspiration: Utagawa Hiroshige's ukiyo-e, especially its keyblock contours,
-flat pigment areas, bokashi gradations and expressive foreground crops.
-These are newly generated interpretations, not historical prints by Hiroshige.
+Visual inspiration: Utagawa Hiroshige's ukiyo-e, including sumi contours, flat
+pigment areas, bokashi gradations, cropped foregrounds and unprinted-paper space.
+The historical compositional reference is
+[Eight Views of Kanazawa at Night](https://www.clevelandart.org/art/1924.967).
+These are newly generated contemporary interpretations, not Hiroshige originals,
+historical print scans or real Omarchy desktop screenshots.
 
-Generation: OpenAI built-in ImageGen, 2026-09-18; four independent generations.
-The four scenes are a bridge in rain, a snow-covered post town, Mount Fuji framed
-by pine, and irises with carp. Modernity comes from the widescreen crop, generous
-negative space and edited detail; the visual language remains woodblock-inspired.
+## Production and selected sources
 
-All four source outputs were 1672 × 941 pixels. Delivery files are resized to
-4096 × 2304 (16:9) using macOS `sips --resampleHeightWidth 2304 4096`.
-This is resampling, not native 4K generation or recovery of additional detail.
-The tiny aspect correction is approximately 0.05%. No retouching, sharpening,
-or further color grading was applied. `preview.png` is a 1600 × 900 derivative
-of Rain; gallery JPEGs are 960 × 540 derivatives. Neither is a desktop screenshot.
-Generated originals remain outside the repository.
+The four images were made with OpenAI's built-in ImageGen on **2026-10-01**.
+Moon established the series' visual language; the first Rain, Snow and Tide
+images used Moon as a style and palette reference. Rain was simplified; Snow and
+Tide were revised after feedback about repeated compositions. The complete
+[concept production and revision record](v2-concepts/ARTWORK.md) is retained.
 
-## Final prompt set
+| Delivered wallpaper | Selected original | Complete prompts | Final composition |
+|---|---|---|---|
+| [Moon](../backgrounds/01-moon.png) | [01-moon.png](v2-concepts/01-moon.png) | [Moon prompt](v2-concepts/moon-prompt.txt) | Distant moonlit bay, low shore, reeds; quiet central sky and water. |
+| [Rain](../backgrounds/02-rain.png) | [02-rain-refined.png](v2-concepts/02-rain-refined.png) | [Initial prompt](v2-concepts/rain-prompt.txt) · [Refinement prompt](v2-concepts/rain-refine-prompt.txt) | Eaves, slanting rain, two umbrellas and road; lantern removed. |
+| [Snow](../backgrounds/03-snow.png) | [03-snow-refined.png](v2-concepts/03-snow-refined.png) | [Initial prompt](v2-concepts/snow-prompt.txt) · [Refinement prompt](v2-concepts/snow-refine-prompt.txt) | Unoccupied snow night: pine, houses and an S-shaped snowy lane. |
+| [Tide](../backgrounds/04-tide.png) | [04-tide-refined.png](v2-concepts/04-tide-refined.png) | [Initial prompt](v2-concepts/tide-prompt.txt) · [Refinement prompt](v2-concepts/tide-refine-prompt.txt) | Overhead close view of rocks and curved currents; no sky or horizon. |
 
-### 01 — rain
+The prompt files preserve the complete generation and editing instructions;
+they are not abbreviated or reconstructed here. Initial
+[Rain](v2-concepts/02-rain.png), [Snow](v2-concepts/03-snow.png) and
+[Tide](v2-concepts/04-tide.png) remain as revision comparisons in the concept
+record and are outside the active wallpaper set.
 
-Use case: stylized-concept. Asset: one landscape desktop wallpaper for Shigure, 16:9, request 3840x2160. The user rejected previous images because they looked like modern cinematic digital paintings instead of Utagawa Hiroshige ukiyo-e. The PRIMARY REQUIREMENT is an unmistakably authentic Edo-period Japanese ukiyo-e MULTICOLOR WOODBLOCK PRINT in the visual style of Utagawa Hiroshige, newly composed. Crisp fine dark sumi keyblock outlines enclose broad FLAT pigment shapes, simplified Japanese pictorial perspective, rhythmical carved line patterns, flat silhouetted vegetation, small limited palette of Prussian blue/indigo, blue-grey, warm unprinted ivory washi, muted pine green and very small vermilion/ochre accents. Delicate bokashi ink gradients ONLY in sky or water, hand-printed color areas, subtle real paper fibers, slightly uneven pigment. Every object must look drawn and carved, NEVER photographic, NEVER volumetric, NEVER painterly digital concept art. No dramatic lighting, no realistic reflections or cast shadows, no 3D, no airbrushed forms, no realistic rock textures, no fantasy landscape. Modern design comes ONLY from a bold asymmetrical 16:9 crop, highly edited detail, sophisticated balance and generous breathing room, while retaining unmistakable traditional woodblock linework and subject stylization. Contemporary museum print quality, fresh paper rather than artificially distressed antique scan. Full-bleed artwork with NO border, NO text, NO calligraphy, NO cartouches, NO seals, NO signature, NO logo, NO boats. One scene only, not a collage. RAIN / 雨. Hiroshige-like oblique view across an elegant timber trestle bridge in a sudden shower. The bridge is a striking thin diagonal from lower-left into middle-right, with meticulously carved dark parallel rail lines and angular wooden supports; only two tiny umbrella-bearing Edo travelers, one with a muted vermilion garment, drawn as exquisite miniature flat ink silhouettes. Closely spaced straight diagonal black rain lines cross the upper half. Beyond the bridge a broad empty band of pale grey-blue river, a low flat indigo distant embankment at upper right and a few stylized reed tufts in lower right. The bridge geometry and linear rain define the composition. Wide open pale blue and ivory negative space. Dark inky Prussian blue bokashi at the top fading into muted light grey blue. Restrained true woodblock scene, no photographic wet pavement, glowing windows, architecture alley, mountains, sun, ships or boats. Make the carved contour and flat ink planes very apparent.
+Rain's first draft had lettering-like texture on a lantern. An attempted
+texture-only cleanup was not selected; the final edit removed the lantern while
+retaining the eaves, diagonal rain, two umbrellas and road. Snow's straw-cloaked
+traveler, staff and related traces were removed, leaving a fully unoccupied lane.
+Tide was recomposed as an overhead close view, removing the sky, distant islands,
+horizontal horizon and pine branch. Curved currents now distinguish it from
+Moon's horizontal distant bay; Snow's empty scene distinguishes it from Rain's
+travelers.
 
-### 02 — snow
+## Actual files and processing
 
-Use case: stylized-concept. Asset: one landscape desktop wallpaper for Shigure, 16:9, request 3840x2160. The user rejected previous images because they looked like modern cinematic digital paintings instead of Utagawa Hiroshige ukiyo-e. The PRIMARY REQUIREMENT is an unmistakably authentic Edo-period Japanese ukiyo-e MULTICOLOR WOODBLOCK PRINT in the visual style of Utagawa Hiroshige, newly composed. Crisp fine dark sumi keyblock outlines enclose broad FLAT pigment shapes, simplified Japanese pictorial perspective, rhythmical carved line patterns, flat silhouetted vegetation, small limited palette of Prussian blue/indigo, blue-grey, warm unprinted ivory washi, muted pine green and very small vermilion/ochre accents. Delicate bokashi ink gradients ONLY in sky or water, hand-printed color areas, subtle real paper fibers, slightly uneven pigment. Every object must look drawn and carved, NEVER photographic, NEVER volumetric, NEVER painterly digital concept art. No dramatic lighting, no realistic reflections or cast shadows, no 3D, no airbrushed forms, no realistic rock textures, no fantasy landscape. Modern design comes ONLY from a bold asymmetrical 16:9 crop, highly edited detail, sophisticated balance and generous breathing room, while retaining unmistakable traditional woodblock linework and subject stylization. Contemporary museum print quality, fresh paper rather than artificially distressed antique scan. Full-bleed artwork with NO border, NO text, NO calligraphy, NO cartouches, NO seals, NO signature, NO logo, NO boats. One scene only, not a collage. SNOW / 雪. A small Edo-period mountain-post-town street in deep snow, but show no mountain or river. A curving snow-covered path sweeps from lower-right toward a tight group of three modest thatched-roof inns confined to the left third. Huge rounded white unprinted snow caps the roofs and bends a single bare plum branch cropped from upper-left. Two tiny travelers in straw hats and woven capes, depicted with precise woodblock outlines and flat indigo shapes, walk on the path. The upper right two-thirds is a beautifully empty muted blue-grey sky with sparse tiny unprinted snow dots, deep Prussian-blue bokashi just along its top. Architecture uses confident dark keyblock lines, flat warm ochre wood, repetitive carved lattice marks. Snow is pure warm paper bounded by a few elegant blue contour lines, NO realistic shadows. Flattened Hiroshige print perspective, asymmetry, clean quiet empty snow foreground. No water, boat, birch forest, dramatic glow or modern elements.
+All selected originals are **1672 × 941 PNG / RGB**, with **no embedded ICC
+profile**. Active wallpapers retain those bytes and dimensions unchanged: no
+upscaling, sharpening, retouching or additional color grading during integration.
+The aspect ratio is approximately 16:9. Although initial prompts requested
+3840 × 2160, the generated output is not native 4K.
 
-### 03 — mountain
+The [source metadata](v2-concepts/image-metadata.json) records exact sizes and
+SHA-256 hashes. The [concept validation record](v2-concepts/validation.json)
+records the earlier source and palette checks; current integrated-theme results
+are in [VALIDATION.json](VALIDATION.json) and [COMPATIBILITY.md](COMPATIBILITY.md).
 
-Use case: stylized-concept. Asset: one landscape desktop wallpaper for Shigure, 16:9, request 3840x2160. The user rejected previous images because they looked like modern cinematic digital paintings instead of Utagawa Hiroshige ukiyo-e. The PRIMARY REQUIREMENT is an unmistakably authentic Edo-period Japanese ukiyo-e MULTICOLOR WOODBLOCK PRINT in the visual style of Utagawa Hiroshige, newly composed. Crisp fine dark sumi keyblock outlines enclose broad FLAT pigment shapes, simplified Japanese pictorial perspective, rhythmical carved line patterns, flat silhouetted vegetation, small limited palette of Prussian blue/indigo, blue-grey, warm unprinted ivory washi, muted pine green and very small vermilion/ochre accents. Delicate bokashi ink gradients ONLY in sky or water, hand-printed color areas, subtle real paper fibers, slightly uneven pigment. Every object must look drawn and carved, NEVER photographic, NEVER volumetric, NEVER painterly digital concept art. No dramatic lighting, no realistic reflections or cast shadows, no 3D, no airbrushed forms, no realistic rock textures, no fantasy landscape. Modern design comes ONLY from a bold asymmetrical 16:9 crop, highly edited detail, sophisticated balance and generous breathing room, while retaining unmistakable traditional woodblock linework and subject stylization. Contemporary museum print quality, fresh paper rather than artificially distressed antique scan. Full-bleed artwork with NO border, NO text, NO calligraphy, NO cartouches, NO seals, NO signature, NO logo, NO boats. One scene only, not a collage. MOUNTAIN / 山. A bold Hiroshige-inspired view of Mount Fuji from a high pine-clad pass, with NOT a drop of water. Monumental cropped dark pine trunk at far left, an angular branch with distinctive umbrella-like flat clusters of carved green needles reaches across the upper left quarter. A low ochre walking path hugs the lower-left ridge then disappears; no people needed. A clearly recognizable triangular Fuji sits slightly right of centre in the far distance, flat Prussian-blue slopes with delicate dark contour strokes and a small graphically scalloped ivory snow crown. Three low irregular flat blue foothill silhouettes span the bottom third. Vast warm ivory to muted pale blue sky, a narrow quiet peach bokashi band near the horizon, no sun. Original Edo ukiyo-e visual grammar, confidently outlined pine bark patterns and simple overlapping ink planes, NOT a digitally painted realistic alpine panorama. Generous quiet space through the centre. No boats, lakes, rivers, buildings or realistic geology.
+`preview.png` is a **1600 × 900** Moon display copy made with macOS
+`sips --resampleHeightWidth 900 1600`. Gallery JPEGs in `docs/images/` use the same
+basenames as the active wallpapers and are **1024 × 576**, made with
+`sips -Z 1024 -s format jpeg -s formatOptions 75`. These are presentation copies,
+not live desktop captures or higher-resolution source artwork.
 
-### 04 — water
+## Palette and edition history
 
-Use case: stylized-concept. Asset: one landscape desktop wallpaper for Shigure, 16:9, request 3840x2160. The user rejected previous images because they looked like modern cinematic digital paintings instead of Utagawa Hiroshige ukiyo-e. The PRIMARY REQUIREMENT is an unmistakably authentic Edo-period Japanese ukiyo-e MULTICOLOR WOODBLOCK PRINT in the visual style of Utagawa Hiroshige, newly composed. Crisp fine dark sumi keyblock outlines enclose broad FLAT pigment shapes, simplified Japanese pictorial perspective, rhythmical carved line patterns, flat silhouetted vegetation, small limited palette of Prussian blue/indigo, blue-grey, warm unprinted ivory washi, muted pine green and very small vermilion/ochre accents. Delicate bokashi ink gradients ONLY in sky or water, hand-printed color areas, subtle real paper fibers, slightly uneven pigment. Every object must look drawn and carved, NEVER photographic, NEVER volumetric, NEVER painterly digital concept art. No dramatic lighting, no realistic reflections or cast shadows, no 3D, no airbrushed forms, no realistic rock textures, no fantasy landscape. Modern design comes ONLY from a bold asymmetrical 16:9 crop, highly edited detail, sophisticated balance and generous breathing room, while retaining unmistakable traditional woodblock linework and subject stylization. Contemporary museum print quality, fresh paper rather than artificially distressed antique scan. Full-bleed artwork with NO border, NO text, NO calligraphy, NO cartouches, NO seals, NO signature, NO logo, NO boats. One scene only, not a collage. WATER / 水. Hiroshige's ukiyo-e flower-and-fish sensibility: cropped cluster of long sword-shaped iris leaves at the far left and lower-left, two delicate blue-violet iris flowers with meticulously carved dark outlines and flat pigments; two Japanese carp glide at different depths in the lower-right quarter, one dark indigo carp and one pale ivory carp with small vermilion patches. Each carp is stylized as an Edo woodblock drawing with graceful dark contour, repetitive carved scale arcs and long fine fin lines; NOT realistic aquarium fish. Broad river water fills 70 percent of the frame, a restrained pale mist-blue to deeper Prussian-blue bokashi band, with a few elegantly spaced long horizontal and curved dark ripples. No horizon, mountains, shore, rocks, architecture or sky. Flat printed water, no photorealistic transparency, light caustics or realistic reflections. Large unoccupied upper-right area, radically sparse modern crop, authentic intricate keyblock botanical/fish detailing. No boats or lettering.
+Moon-gold interaction uses `accent = "#CBB98B"`, moon white uses
+`bright_foreground = "#F0E7D5"`, and the focus border is
+`rgba(CBB98Bee) rgba(84A7BDee) 45deg`. Only these three semantic values change
+from the first edition. The current palette is [colors.toml](../colors.toml),
+with its original candidate preserved in [v2-concepts/colors.toml](v2-concepts/colors.toml).
 
+The first edition's Rain / Snow / Mountain / Water assets and provenance are
+preserved in Git commit `ceb04250c1e9816c83f909e599e924f12b57467c`; they are not
+part of this edition's active wallpaper directory. This is a local Shigure II
+candidate, not a claim of publication or live Omarchy installation.
+
+The configuration, documentation and supplied artwork use the repository's
+[MIT License](../LICENSE).

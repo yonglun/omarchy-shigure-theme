@@ -1,5 +1,5 @@
 # Shigure II · 月下 — Moon/Rain/Snow/Tide
-# Omarchy v4.0.0 semantic palette; second-version moon-gold theme candidate.
+# Concept-review candidate based on the published Omarchy v4.0.0 palette.
 # Indigo surfaces, warm paper text, old-gold interaction; vermilion remains red.
 mode = "dark"
 
@@ -37,5 +37,5 @@ bright_cyan = "#ADD0CB"
 bright_blue = "#A3C3D5"
 bright_magenta = "#CCB5D0"
 
-# Focus gradient: old gold to mist blue, supported by v4.0.0 helpers.
+# Candidate focus gradient: old gold to mist blue, supported by v4.0.0 helpers.
 hyprland_active_border = "rgba(CBB98Bee) rgba(84A7BDee) 45deg"

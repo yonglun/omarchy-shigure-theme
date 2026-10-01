@@ -1,0 +1,79 @@
+[
+  {
+    "file": "01-moon.png",
+    "selected": true,
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "format": "PNG",
+    "icc_profile_present": false,
+    "bytes": 2255781,
+    "sha256": "ad269dda7a6da328b7b787d6f4fe499692d123b03bbd886699cb796234a11961"
+  },
+  {
+    "file": "02-rain-refined.png",
+    "selected": true,
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "format": "PNG",
+    "icc_profile_present": false,
+    "bytes": 2119326,
+    "sha256": "1fc8ba8bd1904cd57a6d4febde06891e3d204d8054f595bbd7eebd6da199a431"
+  },
+  {
+    "file": "02-rain.png",
+    "selected": false,
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "format": "PNG",
+    "icc_profile_present": false,
+    "bytes": 2419431,
+    "sha256": "5a6fae27ad3d757efe589813d36162cf19722e529cd5f39588c85e30a3c448db"
+  },
+  {
+    "file": "03-snow-refined.png",
+    "selected": true,
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "format": "PNG",
+    "icc_profile_present": false,
+    "bytes": 2222594,
+    "sha256": "98b7ebf260f7d8f0889c66ebaa308d5e48cbadf568cb209065ce88a3e3a5b8b7"
+  },
+  {
+    "file": "03-snow.png",
+    "selected": false,
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "format": "PNG",
+    "icc_profile_present": false,
+    "bytes": 2444925,
+    "sha256": "bf2449def8b943ab1064f948ac91d6d4b28bf13ecb8c94694c2c8fcce857b7f7"
+  },
+  {
+    "file": "04-tide-refined.png",
+    "selected": true,
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "format": "PNG",
+    "icc_profile_present": false,
+    "bytes": 2663679,
+    "sha256": "be870ab99684ae9abebdf72704fe19219d4e7f20e79cabb0f5db19da79b779ae"
+  },
+  {
+    "file": "04-tide.png",
+    "selected": false,
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "format": "PNG",
+    "icc_profile_present": false,
+    "bytes": 2186282,
+    "sha256": "86437ec99ef8b45b3f264c33ca700a5f2f28f67a4a7b1e354d9e5e25c67f7098"
+  }
+]
